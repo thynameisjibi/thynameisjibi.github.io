@@ -521,3 +521,39 @@ flowchart TD
 This approach allows you to create powerful nodes with minimal code, relying on n8n's framework to handle the complexity of making API requests and processing responses.
 
 For more information in creating declarative node, [Go here](https://docs.n8n.io/integrations/creating-nodes/build/declarative-style-node/).
+
+<hr>
+
+## How to verify if node has been added to the system
+
+### Figure 1
+
+Based on the three screenshots, I can provide a description of the final step to check if a node has been successfully added to the application:
+
+The screenshots show a workflow automation interface where a REA node is being added to "My workflow 15".
+
+![Figure 1](../assets/images/png/Screenshot1.png)
+
+In the first screenshot, we see the initial workflow interface with a search field and "REA" node selected from available options. The interface shows various integrations like RSS Read, Google Sheets, Microsoft Excel, etc. with a central "Add first step..." placeholder.
+
+The second screenshot shows the REA node actions selection menu, displaying three available actions:
+
+![Figure 2](../assets/images/png/Screenshot2.png)
+
+- ORGANIZATION ACTIONS: "Get the List of Organizations"
+- AGENT ACTIONS: "Get the List of Agents" 
+- CHAT ACTIONS: "Get the Chat Completions"
+
+The third and final screenshot confirms the successful addition of the REA node to the workflow. This verification is evident from:
+
+![Figure 3](../assets/images/png/Screenshot3.png)
+
+1. The node appearing on the canvas with "Wire me up" message
+2. The configuration panel opening on the right side showing:
+    - Parameters tab (selected) with fields for connecting an account and selecting operations
+    - Settings tab option
+    - A "Run once" button at the top
+3. INPUT and OUTPUT sections visible on the canvas
+4. A message indicating "This node can only receive input once. If you connect it to another node, Learn more"
+
+This final screenshot confirms the node has been successfully added to the application and is now ready for configuration and connection to other workflow elements.
